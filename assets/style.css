@@ -21,23 +21,32 @@ html {
 
 /*  --------------- Global Styles -----------------  */
 body {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
 }
 
 #header {
     text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
     padding: 10px;
-    border: 5px solid #A550B2;
     border-radius: 10px;
-    background-color: #fff;
+    background: linear-gradient(145deg, #704CBF, #A550B2);
+    box-shadow: 5px 5px 1px #000;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 2px #704CBF;
 }
 
 #task-list {
     margin-top: 10px;
-    border: 5px solid #A550B2;
+    padding: 10px;
+    color: #fff;
     border-radius: 10px;
-    background-color: #fff;
+    font-weight: 900;
+    background: linear-gradient(145deg, #704CBF, #A550B2);
+    box-shadow: 5px 5px 1px #000;
+    text-shadow: 4px 4px 2px #704CBF;
 }
 
 .row {
@@ -53,6 +62,8 @@ body {
 
 h2 {
     text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
 }
 
 input {
@@ -60,18 +71,25 @@ input {
     border: none;
     outline: none;
     padding: 10px;
-    font-weight: 14px;
-    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
     color: #fff;
     border-radius: 10px;
-    height: 40px;
+    height: 48px;
     box-shadow: inset 1px 1px 5px 3px #704CBF;
     background-color: #A550B2;
 }
 
+input::placeholder {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
 button {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     color: white;
     padding: 10px 25px;
     text-align: center;
@@ -96,4 +114,23 @@ button:active{
     box-shadow: none;
     background-color: #fff;
     color: #A550B2;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(145deg, #A550B2, #704CBF);
+    border-radius: 10px;
+    padding-left: 0;
+    list-style-type: none;
+    box-shadow: 5px 5px 1px #000;
+}
+
+ul li {
+    background: linear-gradient(145deg, #A550B2, #704CBF);
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 1px #000;
 }
