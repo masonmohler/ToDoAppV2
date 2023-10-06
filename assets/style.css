@@ -1,0 +1,99 @@
+/*  ---------------Box Sizing-----------------  */
+
+html {
+    box-sizing: border-box;
+}
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+}
+
+/*  --------------- Utility Classes -----------------  */
+
+.container {
+    width: 80vw;
+    max-width: 960px;
+    margin: 40px auto;
+    background: linear-gradient(145deg, #704CBF, #A550B2);
+    min-height: 100vw;
+}
+
+/*  --------------- Global Styles -----------------  */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+}
+
+#header {
+    text-align: center;
+    padding: 10px;
+    border: 5px solid #A550B2;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#task-list {
+    margin-top: 10px;
+    border: 5px solid #A550B2;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(145deg, #A550B2, #704CBF);
+    border-radius: 10px;
+    padding-left: 20px;
+    margin: 25px;
+    box-shadow: 5px 5px 1px #000;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-weight: 14px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 10px;
+    height: 40px;
+    box-shadow: inset 1px 1px 5px 3px #704CBF;
+    background-color: #A550B2;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 1px black;
+    transition: .5s;
+    background-color: #A550B2;
+    border: 5px solid #A550B2;
+}
+  
+button:hover{
+    box-shadow: 5px 5px 1px black, 100px 0px inset #fff;
+    background-color: #fff;
+    color: #A550B2;
+}
+  
+button:active{
+    box-shadow: none;
+    background-color: #fff;
+    color: #A550B2;
+}
